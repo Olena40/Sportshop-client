@@ -1,0 +1,30 @@
+import React, { useContext } from "react";
+import { observer } from "mobx-react-lite";
+import { Context } from "../index";
+import { Pagination } from "react-bootstrap";
+
+const Pages = observer(() => {
+  const { sportgood } = useContext(Context);
+  const pageCount = Math.ceil(sportgood.totalCount / sportgood.limit);
+  const pages = [];
+
+  for (let i = 0; i < 5; i++) {
+    pages.push(i + 1);
+  }
+
+  return (
+    <Pagination className="mt-3">
+      {pages.map((page) => (
+        <Pagination.Item
+          key={page}
+          active={sportgood.page === page}
+          onClick={() => sportgood.setPage(page)}
+        >
+          {page}
+        </Pagination.Item>
+      ))}
+    </Pagination>
+  );
+});
+
+export default Pages;

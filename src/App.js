@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useContext, useEffect, useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from "./components/AppRouter";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import Basket from "./pages/Basket";
+import { observer } from "mobx-react-lite";
+import { Context } from "./index";
+// import {check} from "./http/userAPI";
 
-function App() {
+const App = observer(() => {
+  const { user } = useContext(Context);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+      <NavBar />
 
+      <AppRouter />
+      <Footer />
+    </Router>
+  );
+});
 export default App;
