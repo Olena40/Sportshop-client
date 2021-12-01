@@ -39,7 +39,7 @@ export default function CartList(props) {
           </tbody>
         </table>
       ) : (
-        <p>Your cart is empty!</p>
+        <p style={{ justifycontent: "center" }}>Your cart is empty!</p>
       )}
     </div>
   );

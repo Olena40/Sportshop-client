@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Basket = () => {
   return (
-    <div className="blog">
+    <div className="container-fluid">
       <h1>Basket</h1>
     </div>
   );

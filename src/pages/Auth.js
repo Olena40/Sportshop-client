@@ -36,9 +36,8 @@ const Auth = observer(() => {
       style={{ height: window.innerHeight - 54 }}
     >
       <Card
-        style={{ width: "28rem" }}
+        style={{ width: "28rem", backgroundColor: "lightblue" }}
         className="p-5"
-        style={{ backgroundColor: "lightblue" }}
       >
         <h4 className="m-auto">{isLogin ? "Authorization" : "Registration"}</h4>
 

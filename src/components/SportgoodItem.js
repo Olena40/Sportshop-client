@@ -19,7 +19,6 @@ const SportgoodItem = (props) => {
     <div>
       <Col
         onClick={() => navigate(SPORTGOODS_ROUTE + "/" + sportgood.id)}
-        style={{ border: "1px solid lightgray" }}
         className={
           "mt-4 px-3 d-flex-column justify-content-around align-items-end"
         }
