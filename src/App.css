@@ -1,153 +1,46 @@
+/* * {
+  flex-shrink: 0;
+} */
 .App {
+  /* min-height: 100vh; */
   text-align: center;
-  width: 85%;
+  width: 960px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.home {
-  background-image: url(./ladoga.jpg);
-}
-.ml-auto {
-  display: flex;
-  justify-content: flex-end;
-}
 .ladoga {
   height: 400px;
-  width: 98%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+}
 
-  /*  position : absolute;
-    bottom : 0,
-    top : 50,
-    left : 0,
-    right : 0,
-    alignItems: 'center',
-    justifyContent:'center',
- */
-}
-#ladoga {
-  align-items: center;
-}
 .blog {
   margin-left: 10%;
 }
-.page-footer {
-  align-items: flex-end;
 
-  margin-left: 10%;
-  margin-right: 10%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
 .centered {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 35%;
+  left: 55%;
   transform: translate(-50%, -50%);
-
-  font-size: 60px;
+  color: snow;
+  font-size: 50px;
   font-family: "Dancing Script", cursive;
 }
 .header {
   flex-direction: column;
   font-size: 40px;
   height: 50px;
-
   margin-left: 2%;
-}
-.navi {
-  margin-left: 2%;
-  margin-right: 2%;
-}
-.h4 {
-  padding-right: 5%;
-}
-.shop {
-  width: auto;
-  flex: 1 1 auto;
-}
-/*  body {
-  margin: 0;
-  color: #fff;
-  /* Растягиваем body по высоте html */
-/*  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}  */
-*/ body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-nav {
-  box-shadow: none;
-}
-
-.items {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-}
-
-.card .card-content {
-  flex-grow: 1;
-}
-
-.card .card-title {
-  font-size: 18px;
-}
-
-.btn,
-.btn-large,
-.btn-small,
-.btn-flat {
-  padding: 0 10px;
 }
 
 .cart-icon {
   position: fixed;
-  z-index: 100;
-  right: 120px;
-  top: 15px;
-
+  right: 300px;
+  top: 70px;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,8 +57,8 @@ nav {
   max-width: 100%;
   max-height: 80vh;
   overflow-y: auto;
-  top: 25%;
-  left: 55%;
+  top: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   color: #282c34;
@@ -190,9 +83,42 @@ nav {
 .show-alert {
   position: fixed;
   z-index: 100;
-  right: 60px;
-  top: 10px;
+  right: 250px;
+  top: 120px;
   background-color: rgb(60, 93, 126);
   color: #fff;
   padding: 10px;
+}
+.container-fluid {
+  width: 960px !important;
+}
+#admin {
+  margin-top: 7%;
+}
+.car {
+  justify-content: space-around;
+}
+.care {
+  justify-content: space-around;
+  text-align: center;
+}
+#footer {
+  background-color: #f2f0ed;
+  border: 1px solid #b5b3b1;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.shop {
+  width: auto;
+  flex: 1 1 auto;
+}
+#shop {
+  background-color: #d4edd3;
+}
+#brand {
+  display: flex;
+  justify-content: space-evenly;
 }

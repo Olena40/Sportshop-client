@@ -3,7 +3,6 @@ import { Col, Container, Image, Card } from "react-bootstrap";
 import { fetchOneSportgood } from "../http/sportgoodAPI";
 import starty from "../starty.jpeg";
 import { useParams } from "react-router-dom";
-import SportgoodItem from "../components/SportgoodItem";
 
 const SportgoodPage = (props) => {
   const [sportgood, setSportgood] = useState({ info: [] });
@@ -12,11 +11,11 @@ const SportgoodPage = (props) => {
     fetchOneSportgood(id).then((data) => setSportgood(data));
   }, []);
 
-  const { name, price, img, appendToCart } = props;
+  const { name, price, appendToCart } = props;
   const item = { id: id, name: name, price: price };
 
   return (
-    <Container>
+    <Container id="admin" className="container-fluid">
       <div className="d-flex align-items-start">
         <Col style={{ color: "black" }}>
           <Image

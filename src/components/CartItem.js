@@ -1,3 +1,5 @@
+import * as Icon from "react-bootstrap-icons";
+
 export default function CartItem(props) {
   return (
     <tr>

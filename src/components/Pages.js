@@ -8,12 +8,12 @@ const Pages = observer(() => {
   const pageCount = Math.ceil(sportgood.totalCount / sportgood.limit);
   const pages = [];
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < pageCount; i++) {
     pages.push(i + 1);
   }
 
   return (
-    <Pagination className="mt-3">
+    <Pagination className="mt-5">
       {pages.map((page) => (
         <Pagination.Item
           key={page}

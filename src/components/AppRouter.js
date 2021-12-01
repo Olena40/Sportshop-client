@@ -24,7 +24,6 @@ const AppRouter = observer(() => {
         <Route key={path} path={path} element={<Component />} exact />
       ))}
 
-      {/* <Route path="*" element={<Navigate to="/" />} /> */}
       <Route path="*" element={<Navigate to={SHOP_ROUTE} />} />
       <Route path="/Blog" element={<Blog />} />
       <Route path="/About" element={<About />} />

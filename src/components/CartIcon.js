@@ -3,7 +3,6 @@ import * as Icon from "react-bootstrap-icons";
 export default function CartIcon(props) {
   return (
     <div className="cart-icon" onClick={props.toggleShow}>
-      {/*  <i className="material-icons">shopping_cart</i> */}
       <button>
         <Icon.Cart4
           style={{ backgroundcolor: "#55acee" }}
