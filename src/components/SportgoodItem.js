@@ -24,15 +24,15 @@ const SportgoodItem = (props) => {
         }
       >
         <Card style={{ widht: 150, cursor: "pointer" }} border={"light"}>
-          <Image
-            className="flex-wrap"
-            widht={70}
-            height={150}
-            src={process.env.REACT_APP_API_URL + sportgood.img}
-          />
-          <div className="text-green-50 mt-1 ">
-            <div></div>
+          <div className="scale">
+            <Image
+              className="flex-wrap scale "
+              widht={70}
+              height={150}
+              src={process.env.REACT_APP_API_URL + sportgood.img}
+            />
           </div>
+          <div className="text-green-50 mt-1 "></div>
           <div style={{ fontSize: 12 }}>{sportgood.name}</div>
           <div
             style={({ border: "1px solid lightgray" }, { color: "blueviolet" })}

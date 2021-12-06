@@ -41,6 +41,7 @@ export default class SportgoodStore {
     this._totalCount = count;
   }
   //////////////////////////////////////
+
   get types() {
     return this._types;
   }
