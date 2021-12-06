@@ -9,21 +9,6 @@ const BrandBar = observer(() => {
   const { sportgood } = useContext(Context);
 
   return (
-    /* <ListGroup horizontal className="me-md-2">
-      {sportgood.brands.map((brand) => (
-        <ListGroup.Item
-          action
-          variant="light"
-          style={{ cursor: "pointer" }}
-          key={brand.id}
-          className="p-3"
-          onClick={() => sportgood.setSelectedBrand(brand)}
-        >
-          {brand.name}
-        </ListGroup.Item>
-      ))}
-    </ListGroup> */
-
     <div id="brand" class="d-flex  ml-3">
       {sportgood.brands.map((brand) => (
         <Card

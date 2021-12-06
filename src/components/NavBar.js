@@ -10,7 +10,7 @@ import { Container, NavDropdown } from "react-bootstrap";
 
 import tenty from "../tenty.jpeg";
 
-const NavBar = observer((props) => {
+const NavBar = observer(() => {
   const { user } = useContext(Context);
   const navigate = useNavigate();
 

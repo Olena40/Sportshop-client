@@ -3,6 +3,7 @@ import Auth from "./pages/Auth.js";
 import Basket from "./pages/Basket.js";
 import Shop from "./pages/Shop.js";
 import SportgoodPage from "./pages/SportgoodPage.js";
+import singlePost from "./pages/singlePost.js";
 import {
   ADMIN_ROUTE,
   BASKET_ROUTE,
@@ -10,6 +11,7 @@ import {
   LOGIN_ROUTE,
   REGISTRATION_ROUTE,
   SPORTGOODS_ROUTE,
+  POST_ROUTE,
 } from "./utils/consts";
 
 export const authRoutes = [
@@ -40,5 +42,10 @@ export const publicRoutes = [
   {
     path: SPORTGOODS_ROUTE + "/:id",
     Component: SportgoodPage,
+  },
+
+  {
+    path: POST_ROUTE + "/:id",
+    Component: singlePost,
   },
 ];
