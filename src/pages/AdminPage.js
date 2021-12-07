@@ -3,11 +3,13 @@ import { Container } from "react-bootstrap";
 import CreateBrand from "../components/modals/CreateBrand.js";
 import CreateType from "../components/modals/CreateType.js";
 import CreateSportgood from "../components/modals/CreateSportgood.js";
+import CreatePost from "../components/modals/CreatePost.js";
 
 const AdminPage = () => {
   const [brandVisible, setBrandVisible] = useState(false);
   const [typeVisible, setTypeVisible] = useState(false);
   const [sportgoodVisible, setSportgoodVisible] = useState(false);
+  const [postVisible, setPostVisible] = useState(false);
 
   return (
     <Container id="admin" className="d-flex-column container-fluid">
@@ -36,6 +38,14 @@ const AdminPage = () => {
         >
           Add good
         </button>
+
+        <button
+          variant={"outline-success"}
+          className="mt-4 p-2"
+          onClick={() => setPostVisible(true)}
+        >
+          Add post
+        </button>
       </div>
 
       <CreateBrand show={brandVisible} onHide={() => setBrandVisible(false)} />
@@ -44,6 +54,7 @@ const AdminPage = () => {
         onHide={() => setSportgoodVisible(false)}
       />
       <CreateType show={typeVisible} onHide={() => setTypeVisible(false)} />
+      <CreatePost show={postVisible} onHide={() => setPostVisible(false)} />
     </Container>
   );
 };

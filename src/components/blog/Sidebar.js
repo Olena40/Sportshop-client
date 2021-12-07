@@ -11,7 +11,7 @@ const Sidebar = observer(() => {
       <div className="sidebarItem">
         <span className="sidebarTitle">About admin</span>
         <img
-          src="https://scontent-ber1-1.xx.fbcdn.net/v/t39.30808-6/247320059_2470451986423118_1667056275135202114_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=efu8CiJ1QQsAX_klhXe&_nc_ht=scontent-ber1-1.xx&oh=934c0339655f794ecd7ace1a8cb4ca06&oe=61ADC21F"
+          src="https://scontent-dus1-1.xx.fbcdn.net/v/t39.30808-6/247320059_2470451986423118_1667056275135202114_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=-LQ03Uu53OwAX_D6zEh&_nc_ht=scontent-dus1-1.xx&oh=643308ae0f2979379256e9e478cb52cf&oe=61B3B0DF"
           alt=""
         />
         <p>

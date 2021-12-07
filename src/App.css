@@ -138,3 +138,22 @@
 .scale img:hover {
   transform: scale(1.2); /* Увеличиваем масштаб */
 }
+#map {
+  height: 100px;
+  width: 500px;
+}
+.about {
+  margin-top: 5%;
+  margin-bottom: 7%;
+  margin-left: 20%;
+  height: 300px;
+  width: 500px;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+.about h5 {
+  text-align: center;
+}
