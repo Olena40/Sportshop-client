@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-import CreateBrand from "../components/models/CreateBrand.js.js";
-import CreateType from "../components/models/CreateType.js.js";
+import CreateBrand from "../components/models/CreateBrand.js";
+import CreateType from "../components/models/CreateType.js";
 import CreateSportgood from "../components/models/CreateSportgood.js";
 import CreatePost from "../components/models/CreatePost.js";
 
