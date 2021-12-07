@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-import CreateBrand from "../components/modals/CreateBrand.js";
-import CreateType from "../components/modals/CreateType.js";
-import CreateSportgood from "../components/modals/CreateSportgood.js";
-import CreatePost from "../components/modals/CreatePost.js";
+import CreateBrand from "../components/models/CreateBrand.js.js";
+import CreateType from "../components/models/CreateType.js.js";
+import CreateSportgood from "../components/models/CreateSportgood.js";
+import CreatePost from "../components/models/CreatePost.js";
 
 const AdminPage = () => {
   const [brandVisible, setBrandVisible] = useState(false);
