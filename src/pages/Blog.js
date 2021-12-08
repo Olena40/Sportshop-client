@@ -12,17 +12,26 @@ const Blog = observer(() => {
   const { post } = useContext(Context);
 
   useEffect(() => {
-    fetchCategories().then((base) => post.setCategories(base));
-    fetchPosts().then((base) => {
-      post.setPosts(base.rows);
+    fetchCategories().then((data) => post.setCategories(data));
+    fetchPosts().then((data) => {
+      post.setPosts(data.rows);
     });
   }, []);
 
   useEffect(() => {
-    fetchPosts(post.selectedCategory.id).then((base) => {
-      post.setPosts(base.rows);
+    fetchPosts(post.selectedCategory.id).then((data) => {
+      post.setPosts(data.rows);
     });
+  }, [post.selectedCategory]);
+
+  const [articles, setArticles] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:7080/api/post")
+      .then((resp) => resp.json())
+      .then((data) => setArticles(data))
+      .catch((err) => alert(err));
   }, []);
+  console.log(articles);
 
   return (
     <Container className="container-fluid">

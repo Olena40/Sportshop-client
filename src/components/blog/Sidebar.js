@@ -1,10 +1,20 @@
 import "./blog.css";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { observer } from "mobx-react-lite";
 import { Context } from "../../index";
+import { POST_ROUTE } from "../../utils/consts";
 
 const Sidebar = observer(() => {
   const { post } = useContext(Context);
+
+  const [articles, setArticles] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:7080/api/post")
+      .then((resp) => resp.json())
+      .then((data) => setArticles(data))
+      .catch((err) => alert(err));
+  }, []);
+  console.log(articles);
 
   return (
     <div className="sidebar">

@@ -34,9 +34,7 @@ const SportgoodItem = (props) => {
           </div>
           <div className="text-green-50 mt-1 "></div>
           <div style={{ fontSize: 12 }}>{sportgood.name}</div>
-          <div
-            style={({ border: "1px solid lightgray" }, { color: "blueviolet" })}
-          >
+          <div style={({ border: "1px solid lightgray" }, { color: "black" })}>
             {sportgood.price}€
           </div>
         </Card>
@@ -45,7 +43,7 @@ const SportgoodItem = (props) => {
       <Col
         className={" px-3 d-flex-column justify-content-around align-items-end"}
       >
-        <Card style={{ widht: 150, cursor: "pointer" }} border={"light"}>
+        <Card style={{ widht: 150, cursor: "pointer" }}>
           <div class="d-flex justify-content-between ">
             <button
               className=" align-self-center btn-outline-success"
