@@ -21,8 +21,9 @@ const Auth = observer(() => {
         data = await login(email, password);
       } else {
         data = await registration(email, password);
+        alert("Пользователь создан");
       }
-      user.setUser(user);
+      user.setUser(data);
       user.setIsAuth(true);
       navigate(SHOP_ROUTE);
     } catch (e) {
@@ -32,12 +33,12 @@ const Auth = observer(() => {
 
   return (
     <Container
-      className="d-flex justify-content-center align-items-start mt-3"
+      className="d-flex justify-content-center align-items-start mt-3 "
       style={{ height: window.innerHeight - 54 }}
     >
       <Card
         style={{ width: "28rem", backgroundColor: "lightblue" }}
-        className="p-5"
+        className="p-5 aut"
       >
         <h4 className="m-auto">{isLogin ? "Authorization" : "Registration"}</h4>
 
@@ -48,6 +49,9 @@ const Auth = observer(() => {
             placeholder="Enter your email..."
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            /*  onClick={() => {
+              alert.show("Alert test");
+            }} */
           />
 
           <Form.Label className="mt-3">Password</Form.Label>

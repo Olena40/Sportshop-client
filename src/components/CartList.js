@@ -1,4 +1,5 @@
 import CartItem from "./CartItem";
+import * as Icon from "react-bootstrap-icons";
 
 export default function CartList(props) {
   // total of goods in the cart
@@ -9,18 +10,18 @@ export default function CartList(props) {
   return (
     <div className="cart-modal">
       <i className="material-icons cart-modal-close" onClick={props.toggleShow}>
-        close
+        <Icon.X size={30} />
       </i>
       <h5 className="red-text text-lighten-1">Your cart</h5>
       {props.items.length ? (
         <table className="striped">
           <thead>
             <tr>
-              <th>nomination of goods</th>
-              <th>number</th>
-              <th>price</th>
-              <th>sum</th>
-              <th>delete</th>
+              <th>Nomination of goods</th>
+              <th>Number</th>
+              <th>Price</th>
+              <th>Sum</th>
+              <th>Delete</th>
             </tr>
           </thead>
           <tbody>
@@ -32,7 +33,7 @@ export default function CartList(props) {
               />
             ))}
             <tr>
-              <th colSpan="3">total</th>
+              <th colSpan="3">Total</th>
               <th>{cost}</th>
               <th>€</th>
             </tr>
